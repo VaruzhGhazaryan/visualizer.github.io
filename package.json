@@ -1,0 +1,17 @@
+{
+  "name": "visualizer",
+  "version": "1.0.0",
+  "description": "Web Audio Visualization and Online Media Player",
+  "main": "index.js",
+  "scripts": {
+    "run": "npm i"
+  },
+  "author": "Varuzhan Ghazaryan",
+  "website": "https://visualizer.github.io"
+  "license": "MIT",
+  "dependencies": {
+    "p5": "^0.6.1",
+    "simplex-noise": "^2.4.0",
+    "three": "^0.94.0"
+  }
+}

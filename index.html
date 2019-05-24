@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+<section id="main">
+    <div class="wrapper-background"></div>
+    <div class="loader">
+        <div class="loader-circle"></div>
+        <div class="loader-line-mask">
+            <div class="loader-line"></div>
+        </div>
+        <span class="percent">0%</span>
+    </div>
+    <div class="wrapper" id="drop-area">
+        <div class="btn-group">
+            <div class="upload-btn">
+                Upload Audio file
+                <form enctype="multipart/form-data">
+                    <input type="file" name="file" id="upload" multiple/>
+                </form>
+            </div>
+            <div class="text-center text-white">
+                <h1>Or</h1>
+                <span>Drag And Drop file</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="player-wrapper">
+    <div class="player">
+        <div><button class="control" id="stop"><span class="icon i-stop"></span></button></div>
+        <div>
+            <div class="control-group">
+                <button class="control" id="prev"><span class="icon i-prev"></span></button>
+                <button class="control" id="playPause"><span class="icon i-play"></span></button>
+                <button class="control" id="next"><span class="icon i-next"></span></button>
+            </div>
+        </div>
+        <div class="traceGroup">
+            <input type="range" min="1" max="100" value="0" class="slider" id="trace">
+            <div class="timer"><span class="current-time">00:00</span> / <span class="end-time">00:00</span></div>
+        </div>
+        <div class="volumeGroup">
+            <button class="control" id="muteSound"><span class="icon i-volume"></span></button>
+            <input type="range" min="0" max="1" step="0.01" value="1" class="slider" id="volume">
+        </div>
+    </div>
+</div>
+
+<script src="src/js/libs/three.min.js"></script>
+<script src="src/js/libs/p5.min.js"></script>
+<script src="src/js/libs/p5.sound.min.js"></script>
+<script src="src/js/libs/simplex-noise.js"></script>
+<script src="src/js/libs/dat.gui.min.js"></script>
+<script src="src/js/libs/alertify.min.js"></script>
+<script src="src/js/visualization.js"></script>
+<script src="src/js/player.js"></script>
+<script src="src/js/colorMap.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>
